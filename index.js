@@ -20,7 +20,8 @@ module.exports = (app) => {
       comment_id: context.payload.comment.id,
       body: newBody,
       owner,
-      repo
+      repo 
+      
     })
   });
   app.on('issues.opened', async (context) => {
